@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Pomadoro | 00:00</title>
+   <link rel="stylesheet" href="style.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+   <div class="container">
+      <section id="main-interface">
+         <label id="time">00:00</label>
+         <div class="button-container">
+            <button class="btns" id="start-btn">Start</button>
+            <button class="btns" id="pause-btn">Pause</button>
+            <button class="btns" id="reset-btn">Reset</button>
+         </div>
+
+         <div class="session-type">
+            <button class="s-btn" id="s-pomadoro">Pomodoro</button>
+            <button class="s-btn" id="s-break">Break</button>
+         </div>
+      </section>
+
+      <section id="sub-interface">
+
+         <div class="pomadoro-side">
+            <img id="p-down" src="./downArrow.svg" alt="Down-Arrow" class="arrows">
+            <label class="lable-text">Pomodoro</label>
+            <img id="p-up"src="./upArrow.svg" alt="Up-Arrow" class="arrows">
+            <br>
+            <label><span id="pomadoro-time">50</span> min</label>
+         </div>
+
+         <div class="break-side">
+            <img id="b-down" src="./downArrow.svg" alt="Down-Arrow" class="arrows">
+            <label class="lable-text">Break</label>
+            <img id="b-up" src="./upArrow.svg" alt="Up-Arrow" class="arrows">
+            <br>
+            <label><span id="break-time">10</span> min</label>
+         </div>
+      </section>
+   </div>
+
+
+   <audio id="alarm" src="./alarmEffect.mp3"></audio>
+   <script src="./app.js"></script>
+</body>
+
+</html>

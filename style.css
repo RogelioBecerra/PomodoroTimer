@@ -1,0 +1,117 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box; 
+}
+
+:root{
+   --primeryColor: white;
+   --mainInterfaceColor: rgb(93, 133, 219);
+}
+body{
+   font-family: 'Inconsolata', monospace;
+   background-color: rgb(33, 33, 33);
+   height: 100vh;
+}
+
+.container{
+   margin: 0px auto;
+   margin-top: 20vh;
+   height: 300px;
+   width: 400px;
+}
+
+#main-interface{
+   border-radius: 25px 25px 0px 0px;
+   background-color: var(--mainInterfaceColor);
+   height: 70%;
+   text-align: center;
+}
+
+#time{
+   position: relative;
+   top: 30px;
+   font-size: 60px;
+   color: rgb(227, 230, 236);
+}
+
+.button-container{
+   margin-top: 50px;
+}
+
+.btns{
+   cursor: pointer;
+   background-color: var(--primeryColor);
+   border: 2px solid rgb(227, 230, 236);
+   border-radius: 25px;
+   font-family: Inconsolata;
+   font-weight: bolder;
+   font-size: 14px;
+   width: 65px;
+   height: 27px;
+   margin: 0px 5px;
+
+}
+.btns:hover{
+   background-color: rgb(189, 198, 217);
+}
+
+#sub-interface{
+   border-radius: 0px 0px 25px 25px;
+   background-color: var(--primeryColor);
+   height: 30%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.pomadoro-side, .break-side{
+   text-align: center;
+}
+#pomadoro-time, #break-time{
+  font-size: 18px;
+}
+
+.lable-text{
+   font-size: 23px;
+}
+
+.arrows{
+   cursor: pointer;
+   border-radius: 25px;
+   border: 2px solid var(--mainInterfaceColor);
+   position: relative;
+   top: 8px;
+}
+
+.arrows:hover{
+   background-color: var(--mainInterfaceColor);
+}
+
+.session-type{
+   
+   height: 30px;
+   width: 150px;
+   border-radius: 5px;
+   background-color: rgb(66, 66, 66);
+   margin: 0px auto;
+   margin-top:20px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+
+}
+
+.s-btn{
+  cursor: pointer;
+  font-size: 8px;
+  color: var(--primeryColor);
+  width: 55px;
+  height: 17px;
+  border: none;
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.s-btn:hover{
+   background-color: rgba(227, 230, 236, 0.487);
+}
